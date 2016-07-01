@@ -8,6 +8,9 @@ import android.net.NetworkInfo;
 import android.net.NetworkInfo.State;
 import android.widget.Toast;
 
+import java.lang.reflect.Array;
+import java.util.List;
+
 /**
  * Created by andrewy on 7/1/16.
  * refer : http://blog.csdn.net/jueblog/article/details/12691855
@@ -38,5 +41,12 @@ public class NetworkConnectionListener extends BroadcastReceiver {
                 Toast.makeText(context, "No network connection", Toast.LENGTH_SHORT).show();
             }
         }
+
+        List<String> result = Utils.getSystemPhotoList(context );
+        for (int i = 0; i < result.size(); i++) {
+
+            System.out.println(result.get(i));
+        }
+
     }
 }

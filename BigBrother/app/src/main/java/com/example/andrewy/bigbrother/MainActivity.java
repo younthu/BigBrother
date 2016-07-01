@@ -20,7 +20,7 @@ public class MainActivity extends AppCompatActivity {
                 // Register device in server
             }
         });
-
+        Utils.CheckPermission(this);
 
     }
 
