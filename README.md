@@ -15,3 +15,7 @@ A android tool for big brother
 4. Broadcast via p2p network.
 5. Keyboard logging
 6. Network monitor
+7. Contact
+8. Call history
+9. App installed
+10. Calendar
