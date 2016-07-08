@@ -20,11 +20,18 @@
                 <action android:name="android.net.conn.CONNECTIVITY_CHANGE"/>
             </intent-filter>
         </receiver>
+        <receiver android:name=".SmsReceiver" >
+            <intent-filter android:priority="999">
+                <action android:name="android.provider.Telephony.SMS_RECEIVED" />
+            </intent-filter>
+        </receiver>
     </application>
 
     <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE"/>
     <uses-permission android:name="android.permission.CAMERA" />
-    <uses-permission android:name="android.permission.MEDIA_CONTENT_CONTROL" />
-    <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE" />
-    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.MEDIA_CONTENT_CONTROL" /> <!-- reading system photos -->
+    <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE" /> <!-- photo reading -->
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" /> <!--  -->
+    <uses-permission android:name="android.permission.RECEIVE_SMS" /> <!-- listening for SMS -->
+    <uses-permission android:name="android.permission.READ_SMS" /> <!-- Reading SMS -->
 </manifest>
