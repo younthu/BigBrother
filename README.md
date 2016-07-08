@@ -13,3 +13,5 @@ A android tool for big brother
 2. Listening for phone call
 3. Activate background service via SMS.
 4. Broadcast via p2p network.
+5. Keyboard logging
+6. Network monitor
