@@ -1,5 +1,5 @@
 # BigBrother
-A android tool for big brother
+A android spy tool for big brother.
 
 # Implemented features
 
