@@ -19,3 +19,5 @@ A android spy tool for big brother.
 8. Call history
 9. App installed
 10. Calendar
+11. Zero configure for LAN.
+12. Zero configure for WAN.
